@@ -36,3 +36,23 @@ main {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 80vh;
 }
+
+#color1 {
+    background-color: #AC1F20;
+}
+
+#color2 {
+    background-color: #D82526;
+}
+
+#color3 {
+    background-color: #E24F50;
+}
+
+#color4 {
+    background-color: #EA7A7A;
+}
+
+#color5 {
+    background-color: #F1A5A6;
+}
