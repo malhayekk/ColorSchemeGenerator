@@ -29,6 +29,8 @@ function displayColor(color) {
     console.log(color.hex.value)
     const colorHexValue = color.hex.value
     const sectionToColorEl = document.getElementById(`color${colorSection}`)
+    const sectionColorValueEl = document.getElementById(`color${colorSection}Value`)
     sectionToColorEl.style.backgroundColor = color.hex.value
+    sectionColorValueEl.innerText = color.hex.value
     colorSection++
 }
