@@ -9,8 +9,9 @@ formEl.addEventListener("submit", function (e) {
 
 
 function getColorScheme(hex, mode) {
+    hex = hex.replace("#", "")
     console.log(`hex is ${hex} and scheme is ${mode}`)
-    const baseURL = "https://www.thecolorapi.com/scheme"
+    const baseURL = "https://www.thecolorapi.com"
     const endPoint = `/scheme?hex=${hex}&mode=${mode}`
     const path = baseURL+endPoint
     console.log(`fetch path = ${path}`)
