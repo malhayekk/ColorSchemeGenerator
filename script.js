@@ -1,6 +1,7 @@
 const formEl = document.querySelector("form")
 const seedColorEl = document.getElementById("seedColor")
 const colorSchemeModeEl = document.getElementById("colorSchemeMode")
+let colorSection
 
 formEl.addEventListener("submit", function (e) {
     e.preventDefault()
@@ -19,7 +20,7 @@ function getColorScheme(hex, mode) {
         .then((response) => response.json())
         .then((data) => {
             const colors = data.colors
-            let colorSection = 1
+            colorSection = 1
             colors.forEach(displayColor)
         });
 }
