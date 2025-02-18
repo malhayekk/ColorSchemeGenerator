@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <title>Let's generate some color schemes!</title>
+    <meta name="description" content="This website provides a way to generate some color schemes" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--stylesheets-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <input id="seedColor" type="color" value="#e66465" />
+        <select id="colorSchemeMode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="Triad">triad</option>
+        </select>
+        <input id="submit" type="submit" value="Get color scheme" />
+    </form>
+    <main>
+        <section id="color1"> </section>
+        <section id="color2"> </section>
+        <section id="color3"> </section>
+        <section id="color4"> </section>
+        <section id="color5"> </section>
+    </main>
+
+    <!--JS-->
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
