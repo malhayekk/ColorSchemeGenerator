@@ -30,3 +30,9 @@ select {
     background-color: #D1D5DB;
     color: #1F2937;
 }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80vh;
+}
