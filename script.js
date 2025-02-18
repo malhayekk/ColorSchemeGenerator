@@ -1,12 +1,10 @@
 const formEl = document.querySelector("form")
 const seedColorEl = document.getElementById("seedColor")
 const colorSchemeModeEl = document.getElementById("colorSchemeMode")
-let colorSection = 1
 
 formEl.addEventListener("submit", function (e) {
     e.preventDefault()
     getColorScheme(seedColorEl.value, colorSchemeModeEl.value)
-    formEl.reset()
 })
 
 
@@ -21,6 +19,7 @@ function getColorScheme(hex, mode) {
         .then((response) => response.json())
         .then((data) => {
             const colors = data.colors
+            let colorSection = 1
             colors.forEach(displayColor)
         });
 }
@@ -32,6 +31,3 @@ function displayColor(color) {
     sectionToColorEl.style.backgroundColor = color.hex.value
     colorSection++
 }
-
-/*0 - > hex: {value: '#AC1F20', clean: 'AC1F20'}
-*/
