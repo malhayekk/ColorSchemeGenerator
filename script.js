@@ -30,7 +30,7 @@ function displayColor(color) {
     const colorHexValue = color.hex.value
     const sectionToColorEl = document.getElementById(`color${colorSection}`)
     const sectionColorValueEl = document.getElementById(`color${colorSection}Value`)
-    sectionToColorEl.style.backgroundColor = color.hex.value
+    sectionToColorEl.style.backgroundColor = colorHexValue
     sectionColorValueEl.innerText = color.hex.value
     colorSection++
 }
