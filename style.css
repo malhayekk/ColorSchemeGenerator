@@ -36,7 +36,7 @@ select {
 main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80vh 10vh;
+    grid-template-rows: 75vh 10vh;
 }
 
 #color1 {
@@ -64,5 +64,4 @@ main {
     font-weight: bold;
     width: auto;
     margin: auto;
-    font-size: larger;
 }
